@@ -69,7 +69,7 @@ const App = () => {
                   <h4>{item.count}</h4>
                   <p>{item.label}</p>
                 </div>
-                <img src={`/src/assets/images/${item.img}`} alt="" />
+                <img src={`/images/${item.img}`} alt="" />
               </div>
             </div>
           ))}
@@ -95,7 +95,7 @@ const App = () => {
             <div className="dashboard-card">
               {flightsData.map((flight) => (
                 <div className="flight-card" key={flight.id}>
-                  <img src={`/src/assets/images/${flight.logo}`} alt="" />
+                  <img src={`/images/${flight.logo}`} alt="" />
                   <div>
                     <p className="name">{flight.from}</p>
                     <p className="time">{flight.fromTime}</p>
@@ -120,7 +120,7 @@ const App = () => {
             <div className="dashboard-card">
               {pilotsData.map((pilot) => (
                 <div className="flight-card flight-card-2" key={pilot.id}>
-                  <img src="/src/assets/images/pilot-img.png" alt="" />
+                  <img src="/images/pilot-img.png" alt="" />
                   <div>
                     <p className="name">{pilot.name}</p>
                     <p className="time text-center mb-2">{pilot.date}</p>
@@ -149,12 +149,12 @@ const App = () => {
                   <div className="lead-box" key={item.id}>
                     <div className="leader">
                       <p>{String(item.id).padStart(2, "0")}</p>
-                      <img src="/src/assets/images/pilot-img.png" alt="" />
+                      <img src="/images/pilot-img.png" alt="" />
                       <p>{item.name}</p>
                     </div>
                     <div className="score">
                       <p>{item.score}</p>
-                      <img src="/src/assets/images/medal-img.png" alt="" />
+                      <img src="/images/medal-img.png" alt="" />
                     </div>
                   </div>
                 ))}

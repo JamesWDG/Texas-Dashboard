@@ -19,7 +19,7 @@ const Header = () => {
     setUser({
       name: "Sharlette",
       role: "Administrator",
-      avatar: "src/assets/images/logo.png",
+      avatar: "/images/logo.png",
     });
 
     setNotifications({
